@@ -10,11 +10,12 @@ const useTheme = (): [Theme, () => void] => {
 
   const toggleTheme = () => {
     dispatch(setTheme(theme === "light" ? "dark" : "light"));
+    document.documentElement.classList.toggle("dark");
   };
 
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark");
-  }, [theme]);
+  console.log("aaaas");
+  // useEffect(() => {
+  // }, [theme]);
 
   return [theme, toggleTheme];
 };
