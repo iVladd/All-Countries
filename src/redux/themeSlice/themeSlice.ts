@@ -4,7 +4,9 @@ export type Theme = "dark" | "light";
 
 const themeSlice = createSlice({
   name: "theme",
-  initialState: "light" as Theme,
+  initialState: (document.documentElement.classList.contains("dark")
+    ? "dark"
+    : "light") as Theme,
   reducers: {
     setTheme: (_, action: PayloadAction<Theme>) => action.payload,
   },
