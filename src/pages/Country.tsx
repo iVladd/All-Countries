@@ -7,7 +7,7 @@ const CountryPage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="h-screen pb-6 pt-10 dark:bg-themeDark dark:text-themeDark lg:h-[calc(100vh_-_72px)]">
+    <div className="min-h-screen pb-6 pt-10 dark:bg-themeDark dark:text-themeDark lg:h-[calc(100vh_-_72px)]">
       <Wrapper>
         <button
           className="flex items-center gap-2 px-8 py-2 shadow-xl dark:bg-themeDarkLighter dark:shadow-themeDark"
